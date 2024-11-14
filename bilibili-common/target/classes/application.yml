@@ -11,4 +11,8 @@ dromara:
         bucket-name: web-tlias-sa # 改成自己的
         domain: https://web-tlias-sa.oss-cn-hangzhou.aliyuncs.com/ # 访问域名，注意“/”结尾，例如：https://abc.oss-cn-shanghai.aliyuncs.com/
         base-path: bilibili-images/ # 基础路径
-
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
