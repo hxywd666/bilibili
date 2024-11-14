@@ -46,8 +46,8 @@ mybatis-plus:
     db-config:
       id-type: auto
       update-strategy: not_null
-project:
-  folder: c:/webser/easylive/
+file:
+  video: e:/bilibili/video/
 log:
   root:
     level: debug

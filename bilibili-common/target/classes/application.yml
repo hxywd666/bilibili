@@ -1,0 +1,14 @@
+dromara:
+  x-file-storage:
+    default-platform: aliyun-oss-1 #默认使用的存储平台
+    thumbnail-suffix: ".min.jpg" #缩略图后缀，例如【.min.jpg】【.png】
+    aliyun-oss:
+      - platform: aliyun-oss-1 # 存储平台标识
+        enable-storage: true # 启用存储
+        access-key: ${OSS_ACCESS_KEY_ID}
+        secret-key: ${OSS_ACCESS_KEY_SECRET}
+        end-point: oss-cn-hangzhou.aliyuncs.com # 改成自己的
+        bucket-name: web-tlias-sa # 改成自己的
+        domain: https://web-tlias-sa.oss-cn-hangzhou.aliyuncs.com/ # 访问域名，注意“/”结尾，例如：https://abc.oss-cn-shanghai.aliyuncs.com/
+        base-path: bilibili-images/ # 基础路径
+
